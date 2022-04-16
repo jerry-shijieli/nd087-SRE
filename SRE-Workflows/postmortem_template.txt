@@ -1,0 +1,62 @@
+Example Postmortem Template
+
+
+Summary
+Impact:
+
+[Summary of the users impacted and length of time]
+
+Root Cause:
+
+[Description of the issue]
+
+Technical Summary
+Mitigation Steps
+
+[Step 1]
+[Step 2]
+Prevention Measures:
+
+[Describe what is being done to prevent a future outage]
+
+
+Summary/Notes:
+
+[Summary of the incident or extra notes]
+
+Attach Data/Graphs
+
+
+
+Launch Checklist
+
+
+Architecture/Volume
+Provide an architecture diagram of request/response flow.
+
+Attach the load test results.
+
+Integration
+DNS name(s) created
+
+[DNS Name 1]
+[DNS Name 2]
+LoadBalancer rules
+
+[LoadBalancer identifier] - [Rule 1]
+[LoadBalancer identifier] - [Rule 2]
+Monitoring configuration has been provided
+
+[Install monitoring agent on VM]
+[Open firewall port on VM for monitoring agent]
+[Import dashboard into monitoring system]
+Single-points of failure
+[There is only one API that talks to the database]
+[There is no retry logic]
+Manual processes documented
+[Init script needs run before the app is intstalled]
+[Job needs to be configured to support reports]
+Description or actions of a rollback strategy
+[Step 1]
+[Step 2]
+[Step 3]
